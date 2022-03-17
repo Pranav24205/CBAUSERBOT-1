@@ -1,7 +1,7 @@
-FROM LEGEND-AI/LEGENDBOT:slim-buster
+FROM BHAGWANUSERBOT/CBABOT:slim-buster
 
 #clonning repo 
-RUN git clone https://github.com/LEGEND-AI/LEGENDBOT.git /root/userbot
+RUN git clone https://github.com/BHAGWANUSERBOT/CBABOT.git /root/userbot
 #working directory 
 WORKDIR /root/userbot
 
