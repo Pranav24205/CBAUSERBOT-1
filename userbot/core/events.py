@@ -187,7 +187,7 @@ async def send_message(
                 comment_to=comment_to,
             )
         msglink = await client.get_msg_link(response)
-        msg = f"**Sorry, This Is Sensitive Data I Cant Send It To Public.& Reported to Admin Of LegendBot Group [admin](https://t.me/LegendBot_OP). & Dont Try To Send Any Information Without Knowing Anything.** ▶️ [Logger group]({msglink})"
+        msg = f"**Sorry, This Is Sensitive Data I Cant Send It To Public.& Reported to Admin Of CBA_USERBOT Group [admin](https://t.me/CBA_USERBOT). & Dont Try To Send Any Information Without Knowing Anything.** ▶️ [Logger group]({msglink})"
         return await client.sendmessage(
             entity=chatid,
             message=msg,
@@ -318,7 +318,7 @@ async def send_file(
                 **kwargs,
             )
         msglink = await client.get_msg_link(response)
-        msg = f"**Sorry, This Is Sensitive Data I Cant Send It To Public.& Reported to Admin Of LegendBot Group [admin](https://t.me/LegendBot_OP). & Dont Try To Send Any Information Without Knowing Anything.** ▶️ [Logger group]({msglink})"
+        msg = f"**Sorry, This Is Sensitive Data I Cant Send It To Public.& Reported to Admin Of CBAUSER_Bot Group [admin](https://t.me/CBA_USERBOT). & Dont Try To Send Any Information Without Knowing Anything.** ▶️ [Logger group]({msglink})"
         return await client.sendmessage(
             entity=chatid,
             message=msg,
@@ -405,7 +405,7 @@ async def edit_message(
                 schedule=schedule,
             )
         msglink = await client.get_msg_link(response)
-        msg = f"**Sorry, This Is Sensitive Data I Cant Send It To Public.& Reported to Admin Of LegendBot Group [admin](https://t.me/LegendBot_OP). & Dont Try To Send Any Information Without Knowing Anything.** ▶️ [Logger group]({msglink})"
+        msg = f"**Sorry, This Is Sensitive Data I Cant Send It To Public.& Reported to Admin Of CBAUSERBOT Group [admin](https://t.me/CBA_USERBOT). & Dont Try To Send Any Information Without Knowing Anything.** ▶️ [Logger group]({msglink})"
         return await client.editmessage(
             entity=chatid,
             message=message,
