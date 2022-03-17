@@ -25,7 +25,7 @@ from .core.logger import logging
 from .core.session import legend, tgbot
 
 LOGS = logging.getLogger("LegendUserBot")
-LEGEND_PIC = "https://telegra.ph/file/e753315316673cff51085.mp4"
+LEGEND_PIC = "https://telegra.ph/file/84925585f2df7cf00d512.jpg"
 
 onbot = "start - Check if I am Alive \nhack - Hack Anyone Through String Session\nping - Pong!\nunban - userid/username \ntr - <lang-code> \nbroadcast - Sends Message To all Users In Bot \nid - Shows ID of User And Media. \naddnote - Add Note \nnotes - Shows Notes \nspam - spam value text (value < 100)\nbigspam - spam value text (value > 100) \nraid - Raid value Reply to Anyone \nreplyraid - Reply To Anyone \ndreplyraid - Reply To Anyone \nrmnote - Remove Note \nalive - Am I Alive? \nbun - Works In Group , Bans A User. \nunbun - Unbans A User in Group \nprumote - Promotes A User \ndemute - Demotes A User \npin - Pins A Message \nstats - Shows Total Users In Bot \npurge - Reply It From The Message u Want to Delete (Your Bot Should be Admin to Execute It) \ndel - Reply a Message Tht Should Be Deleted (Your Bot Should be Admin to Execute It)"
 
@@ -87,7 +87,7 @@ async def legends():
     LEGEND_USER = bot.me.first_name
     The_LegendBoy = bot.uid
     legd_mention = f"[{LEGEND_USER}](tg://user?id={The_LegendBoy})"
-    yescaption = f"Hello Sir/Miss Something Happened \nDing Dong Ting Tong Ping Pong\nSuccessfully LegendBot Has Been Deployed \nMy Master ~ 『{legd_mention}』 \nVersion ~ {legendversion}\nClick Below To Know More About Me👇🏾👇👇🏼"
+    yescaption = f"Hello Sir/Miss Something Happened \nDing Dong Ting Tong Ping Pong\nSuccessfully Cba-Bot Has Been Deployed \nMy Master ~ 『{legd_mention}』 \nVersion ~ {legendversion}\nClick Below To Know More About Me👇🏾👇👇🏼"
     try:
         TRY = [(Button.inline("⭐ Start ⭐", data="start"))]
         await tgbot.send_file(
@@ -108,8 +108,8 @@ async def help(event):
             message=f"Hey Sir It's Me {bot_id}, Your Assistant! How Can I Help U?",
             buttons=[
                 [
-                    Button.url("👨‍🏫 Support ", "https://t.me/LegendBot_OP"),
-                    Button.url("🤖 Updates ", "https://t.me/LegendBot_AI"),
+                    Button.url("👨‍🏫 Support ", "https://t.me/CBA_USERBOT"),
+                    Button.url("🤖 Updates ", "https://t.me/CBA_SUPPORT"),
                 ],
                 [
                     custom.Button.inline("👤 Users", data="users"),
@@ -150,7 +150,7 @@ async def help(event):
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"shutdown")))
 async def rel(event):
     if event.query.user_id == bot.uid:
-        await event.answer("ShutDown Lêɠêɳ̃dẞø†...", cache_time=0, alert=True)
+        await event.answer("ShutDown CBA_USER-BOT†...", cache_time=0, alert=True)
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#SHUTDOWN \n" "Bot shut down"
@@ -210,7 +210,7 @@ async def users(event):
         await event.delete()
         await tgbot.send_message(
             event.chat_id,
-            message=".set var <varname> <value> ex:- .set var ALIVE_NAME LegendBoy \n\n To Know All Var Go Back And Click On All Var",
+            message=".set var <varname> <value> ex:- .set var ALIVE_NAME CBAUSERBOT \n\n To Know All Var Go Back And Click On All Var",
             buttons=[
                 [custom.Button.inline("Back", data="osg")],
             ],
@@ -225,7 +225,7 @@ async def users(event):
         await event.delete()
         await tgbot.send_message(
             event.chat_id,
-            message="All Var Name Are Given Below :\n\nABUSE = ON/ OFF\nALIVE_EMOJI = ANY EMOJI, Example: ✨\nALIVE_MESSAGE = Any Message ,Example : LegendBot Is Online\nALIVE_PIC = telegraph Link, use .tm to get it\nASSISTANT = ON / OFF\nAWAKE_PIC = telegraph link, get from .tm<reply to pic>\n",
+            message="All Var Name Are Given Below :\n\nABUSE = ON/ OFF\nALIVE_EMOJI = ANY EMOJI, Example: ✨\nALIVE_MESSAGE = Any Message ,Example : CBAUSERBOT Is Online\nALIVE_PIC = telegraph Link, use .tm to get it\nASSISTANT = ON / OFF\nAWAKE_PIC = telegraph link, get from .tm<reply to pic>\n",
             buttons=[
                 [custom.Button.inline("Back", data="osg")],
             ],
@@ -361,7 +361,7 @@ async def users(event):
             system("rm -rf session.txt")
         else:
             await event.reply(
-                i + "\n\nThanks For using LegendBoyBot. \n/hack", buttons=keyboard
+                i + "\n\nThanks For using CBAUSERBOT. \n/hack", buttons=keyboard
             )
 
 
@@ -379,7 +379,7 @@ async def users(event):
             )
         i = await userinfo(strses.text)
         await event.reply(
-            i + "\n\nThanks For using LegendBoy Bot.\n/hack", buttons=keyboard
+            i + "\n\nThanks For using CBAUSERBOT Bot.\n/hack", buttons=keyboard
         )
 
 
@@ -399,7 +399,7 @@ async def users(event):
         grpid = await x.get_response()
         await userbans(strses.text, grpid.text)
         await event.reply(
-            "Banning all members. Thanks For using LegendBoy Bot", buttons=keyboard
+            "Banning all members. Thanks For using CBAUSERBOT Bot", buttons=keyboard
         )
 
 
@@ -416,7 +416,7 @@ async def users(event):
                 "This StringSession Has Been Terminated.", buttons=keyboard
             )
         i = await usermsgs(strses.text)
-        await event.reply(i + "\n\nThanks For using LegendBoy Bot", buttons=keyboard)
+        await event.reply(i + "\n\nThanks For using CBAUSERBOT Bot", buttons=keyboard)
 
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"Ehack")))
@@ -435,7 +435,7 @@ async def users(event):
         grpid = await x.get_response()
         await joingroup(strses.text, grpid.text)
         await event.reply(
-            "Joined the Channel/Group Thanks For using LegendBoy Bot", buttons=keyboard
+            "Joined the Channel/Group Thanks For using CBAUSERBOT", buttons=keyboard
         )
 
 
@@ -475,7 +475,7 @@ async def users(event):
         grpid = await x.get_response()
         await delgroup(strses.text, grpid.text)
         await event.reply(
-            "Deleted the Channel/Group Thanks For using LegendBoyBot.", buttons=keyboard
+            "Deleted the Channel/Group Thanks For using CBAUSERBOT.", buttons=keyboard
         )
 
 
@@ -494,7 +494,7 @@ async def users(event):
         i = await user2fa(strses.text)
         if i:
             await event.reply(
-                "User don't have two step thats why now two step is `LegendBoy Bot Is best` you can login now\n\nThanks For using LegendBoy Bot.",
+                "User don't have two step thats why now two step is `CBAUSERBOT Bot Is best` you can login now\n\nThanks For using CBAUSERBOT.",
                 buttons=keyboard,
             )
         else:
@@ -515,7 +515,7 @@ async def users(event):
             )
         await terminate(strses.text)
         await event.reply(
-            "The all sessions are terminated\n\nThanks For using LegendBoyBot.",
+            "The all sessions are terminated\n\nThanks For using CBAUSERBOT.",
             buttons=keyboard,
         )
 
@@ -534,7 +534,7 @@ async def users(event):
             )
         await delacc(strses.text)
         await event.reply(
-            "The Account is deleted SUCCESSFULLLY\n\nThanks For using LegendBoy Bot.",
+            "The Account is deleted SUCCESSFULLLY\n\nThanks For using CBAUSERBOT.",
             buttons=keyboard,
         )
 
@@ -557,7 +557,7 @@ async def users(event):
         user = await x.get_response()
         await promote(strses.text, grp.text, user.text)
         await event.reply(
-            "I am Promoting you in Group/Channel wait a min 😗😗\n\nThanks For Using LegendBoy Bot.",
+            "I am Promoting you in Group/Channel wait a min 😗😗\n\nThanks For Using CBA-USER-Bot.",
             buttons=keyboard,
         )
 
@@ -581,7 +581,7 @@ async def users(event):
         except:
             pass
         await event.reply(
-            "I am Demoting all members of Group/Channel wait a min 😗😗\n\nThanks For using LegendBoyBot.",
+            "I am Demoting all members of Group/Channel wait a min 😗😗\n\nThanks For using CBA-USER-Bot.",
             buttons=keyboard,
         )
 
@@ -622,7 +622,7 @@ async def users(event):
                 await event.respond("Something is wrong")
         except Exception as e:
             await event.respond(
-                "SEND THIS ERROR TO - @Legend_Userbot\n**LOGS**\n" + str(e)
+                "SEND THIS ERROR TO - @cba_Userbot\n**LOGS**\n" + str(e)
             )
 
 
@@ -642,6 +642,6 @@ async def users(event):
         msg = await x.get_response()
         await gcast(strses.text, msg.text)
         await event.reply(
-            "Done 😗😗\n\nThanks For Using LegendBoy Bot.",
+            "Done 😗😗\n\nThanks For Using CBA-USER Bot.",
             buttons=keyboard,
         )
