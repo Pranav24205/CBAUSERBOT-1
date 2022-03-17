@@ -194,7 +194,7 @@ async def _(event):
         for cmd in cmds:
             outstr += f"  - `{cmdprefix}{cmd}`\n"
         outstr += f"**👨‍💻  Usage : ** `{cmdprefix}help -l <command name>`"
-    await eor(event, outstr, aslink=True, linktext="Total Commands of LegendBot are :")
+    await eor(event, outstr, aslink=True, linktext="Total Commands of CBAUSERBOT are :")
 
 
 @legend.legend_cmd(
