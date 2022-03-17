@@ -191,7 +191,7 @@ async def help(event):
     else:
         await tgbot.send_message(
             event.chat_id,
-            message="You Can Deploy LegendBot In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
+            message="You Can Deploy CBAUSER-BOT In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
             link_preview=False,
             buttons=[
                 [
