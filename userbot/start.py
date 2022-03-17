@@ -77,7 +77,7 @@ async def killer():
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_file("@BotFather", "userbot/resources/pics/main.jpg")
+            await bot.send_file("@BotFather", "https://telegra.ph/file/7a43d71e592d9477a79a2.jpg")
             await asyncio.sleep(2)
         except Exception as e:
             print(e)
