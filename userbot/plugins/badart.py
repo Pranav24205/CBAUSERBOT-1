@@ -1,6 +1,6 @@
 """
-Created by @Legend_K_Boy
-Plugin for LegendUserBot
+Created by @CBA_USERBOT
+Plugin for CBA_UserBot
 #credit @GulfysHalfyyyy
 """
 
