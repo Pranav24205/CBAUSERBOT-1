@@ -230,7 +230,7 @@ async def add_blacklist_chat(event):
         blacklistchats = {}
     if len(blkchats) == 0:
         return await eod(event, "__There are no blacklisted chats in your bot.__")
-    result = "🔰 **The list of blacklisted chats are :**\n\n"
+    result = "🔰 **The list of blacklisted chats are .:**\n\n"
     for chat in blkchats:
         result += f"☞ {blacklistchats[str(chat)]['chat_name']}\n"
         result += f"**Chat Id :** `{chat}`\n"
