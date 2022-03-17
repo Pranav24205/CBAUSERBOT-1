@@ -290,7 +290,11 @@ async def inline_handler(event):  # sourcery no-metrics
                 text=f"**⚜ SAB KA BAAP CBAUSERBOT ⚜**",
                 buttons=[
                     [Button.url("♥️ Tutorial ♥", "NOTHING")],
-                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/BHAGWANUSERBOT/CBABOT")],
+                    [
+                        Button.url(
+                            "📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/BHAGWANUSERBOT/CBABOT"
+                        )
+                    ],
                     [
                         Button.url(
                             "💞 Deploy 💞",
@@ -621,7 +625,9 @@ async def inline_handler(event):  # sourcery no-metrics
         else:
             buttons = [
                 (
-                    Button.url("Source code", "https://github.com/BHAGWANUSERBOT/CBABOT"),
+                    Button.url(
+                        "Source code", "https://github.com/BHAGWANUSERBOT/CBABOT"
+                    ),
                     Button.url(
                         "Deploy",
                         "heroku.com/deploy?template=https://github.com/BHAGWANUSERBOT/CBABOT",
