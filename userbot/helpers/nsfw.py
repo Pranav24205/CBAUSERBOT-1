@@ -3,7 +3,7 @@ from telethon.tl import functions
 from ..core.logger import logging
 from ..core.managers import eor
 
-LOGS = logging.getLogger("LegendUserBot")
+LOGS = logging.getLogger("CbaUserBot")
 
 pawn = [
     "nsfw",
@@ -112,7 +112,7 @@ hemtai = [
 
 async def importent(event):
     legend = ["-1001368578667", "-1001750559161"]
-    if str(event.chat_id) in legend:
+    if str(event.chat_id) in cba:
         await eor(event, "**Yes I'm GAY**")
         await event.client.kick_participant(event.chat_id, "me")
         return True
