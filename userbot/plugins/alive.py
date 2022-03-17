@@ -27,7 +27,7 @@ menu_category = "utils"
 
 @legend.legend_cmd(
     pattern="legend$",
-    command=("legend", menu_category),
+    command=("cba", menu_category),
     info={
         "header": "To check bot's alive status",
         "options": "To show media in this cmd you need to set ALIVE_PIC with media link, get this by replying the media by .tgm",
@@ -113,9 +113,9 @@ async def amireallyalive(event):
     a = gvarstatus("ALIVE_EMOJI") or "✥"
     Legend = [x for x in a.split()]
     EMOJI = random.choice(Legend)
-    legend_caption = "**LegendBot Is Online**\n\n"
+    legend_caption = "**CBA_BOT Is Online**\n\n"
     legend_caption += f"**{EMOJI} Telethon version :** `{version.__version__}\n`"
-    legend_caption += f"**{EMOJI} Legenduserbot Version :** `{legendversion}`\n"
+    legend_caption += f"**{EMOJI} Cbauserbot Version :** `{legendversion}`\n"
     legend_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
     legend_caption += f"**{EMOJI} Uptime :** {uptime}\n"
     legend_caption += f"**{EMOJI} Master:** {mention}\n"
@@ -126,19 +126,19 @@ async def amireallyalive(event):
 
 edit_time = 12
 """ =======================CONSTANTS====================== """
-file1 = "https://te.legra.ph/file/2426eab17330c6e6310ea.mp4"
-file2 = "https://te.legra.ph/file/11ec9dd576ee5536125b2.jpg"
-file3 = "https://te.legra.ph/file/d2a5265abdc4e73af1f94.jpg"
-file4 = "https://telegra.ph/file/b6f0c65a337b1f2609d07.jpg"
-file5 = "https://telegra.ph/file/af51de2749a4506d3eb43.jpg"
+file1 = "https://telegra.ph/file/84925585f2df7cf00d512.jpg"
+file2 = "https://telegra.ph/file/84925585f2df7cf00d512.jpg"
+file3 = "https://telegra.ph/file/84925585f2df7cf00d512.jpg"
+file4 = "https://telegra.ph/file/84925585f2df7cf00d512.jpg"
+file5 = "https://telegra.ph/file/84925585f2df7cf00d512.jpg"
 """ =======================CONSTANTS====================== """
-pm_caption = f"**LegendBot Is Up**\n"
+pm_caption = f"**CBA_Bot Is Up**\n"
 pm_caption += f"**╭────────────**\n"
 pm_caption += f"┣»»»『{mention}』«««\n"
-pm_caption += f"┣Lêɠêɳ̃dẞø† ~ {legendversion}\n"
-pm_caption += f"┣Lêɠêɳ̃d  ~ [Owner](https://t.me/Legend_K_Boy)\n"
-pm_caption += f"┣Support ~ [G𝖗ουρ](https://t.me/LegendBot_OP)\n"
-pm_caption += f"┣Řepô    ~ [Rєρο](https://github.com/LEGEND-AI/LEGENDBOT)\n"
+pm_caption += f"┣CBA-USERBOT ~ {legendversion}\n"
+pm_caption += f"CBA BOT  ~ [Owner](https://t.me/CBA_USERBOT)\n"
+pm_caption += f"┣Support ~ [G𝖗ουρ](https://t.me/CBA_SUPPORT)\n"
+pm_caption += f"┣Řepô    ~ [Rєρο](https://github.com/BHAGWANUSERBOT/CBABOT)\n"
 pm_caption += f"**╰────────────**\n"
 
 
