@@ -32,7 +32,7 @@ async def age_verification_true(event: CallbackQuery):
         addgvar("ALLOW_NSFW", "true")
         await event.edit(
             text="Done Now Use Again",
-            file="https://telegra.ph/file/85f3071c31279bcc280ef.jpg",
+            file="https://telegra.ph/file/84925585f2df7cf00d512.jpg",
             buttons=buttons,
         )
     except MessageNotModifiedError:
@@ -57,8 +57,8 @@ async def age_verification_false(event: CallbackQuery):
     try:
         delgvar("ALLOW_NSFW")
         await event.edit(
-            text="GO AWAY KID !",
-            file="https://telegra.ph/file/1140f16a883d35224e6a1.jpg",
+            text="BETE CHALE JA !",
+            file="https://telegra.ph/file/6c38ad2468c1e5485adb0.jpg",
             buttons=buttons,
         )
     except MessageNotModifiedError:
@@ -83,7 +83,7 @@ async def chg_of_decision_(event: CallbackQuery):
     try:
         await event.edit(
             text="**ARE YOU OLD ENOUGH FOR THIS ?**",
-            file="https://telegra.ph/file/238f2c55930640e0e8c56.jpg",
+            file="https://telegra.ph/file/6c38ad2468c1e5485adb0.jpg",
             buttons=buttons,
         )
     except MessageNotModifiedError:
