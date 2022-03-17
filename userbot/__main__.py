@@ -17,7 +17,7 @@ from .utils import (
     verifyLoggerGroup,
 )
 
-LOGS = logging.getLogger("LegendUserBot")
+LOGS = logging.getLogger("CbaUserBot")
 
 print(userbot.__copyright__)
 print("Licensed under the terms of the " + userbot.__license__)
