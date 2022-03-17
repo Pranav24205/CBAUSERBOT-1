@@ -59,18 +59,18 @@ ban_pic = "./userbot/resources/pics/ban.jpg"
 
 
 # channel
-my_channel = Config.YOUR_CHANNEL or "LegendBot_OP"
-my_group = Config.YOUR_GROUP or "LegendBot_AI"
+my_channel = Config.YOUR_CHANNEL or "CBA_USERBOT"
+my_group = Config.YOUR_GROUP or "CBA_SUPPORT"
 if "@" in my_channel:
     my_channel = my_channel.replace("@", "")
 if "@" in my_group:
     my_group = my_group.replace("@", "")
 
 # My Channel
-chnl_link = "https://t.me/LegendBot_AI"
+chnl_link = "https://t.me/CBA_USERBOT"
 Legend_channel = f"[Lêɠêɳ̃dẞø† ]({chnl_link})"
-grp_link = "https://t.me/LegendBot_OP"
-Legend_grp = f"[Lêɠêɳ̃dẞø† ]({grp_link})"
+grp_link = "https://t.me/CBA_SUPPORT"
+Legend_grp = f"[CBA-USERBOT† ]({grp_link})"
 
 
 PM_START = []
