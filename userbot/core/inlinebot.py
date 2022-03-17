@@ -90,7 +90,7 @@ def main_menu():
         ],
         [
             custom.Button.inline("⚜ Alive ⚜", data="stats"),
-            Button.url("Support 🇮🇳", "https://t.me/LegendBot_AI"),
+            Button.url("Support 🇮🇳", "https://t.me/CBA_USERBOT"),
         ],
         [custom.Button.inline("❌", data="clise")],
     ]
@@ -249,7 +249,7 @@ async def inline_handler(event):  # sourcery no-metrics
                 (Button.url(f"{ALIVE_NAME}", f"tg://openmessage?user_id={USERID}"),),
                 (
                     Button.inline("Stats", data="stats"),
-                    Button.url("Repo", "https://github.com/ITS-LEGENDBOT/LEGENDBOT"),
+                    Button.url("Repo", "https://github.com/BHAGWANUSERBOT/CBABOT"),
                 ),
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")
@@ -263,7 +263,7 @@ async def inline_handler(event):  # sourcery no-metrics
                 PIC = list(legend)
                 I_IMG = random.choice(PIC)
             elif not IALIVE_PIC:
-                I_IMG = "https://te.legra.ph/file/74530a36e7b5e60ced878.jpg"
+                I_IMG = "https://telegra.ph/file/7a43d71e592d9477a79a2.jpg"
             if I_IMG and I_IMG.endswith((".jpg", ".png")):
                 result = builder.photo(
                     I_IMG,
@@ -287,14 +287,14 @@ async def inline_handler(event):  # sourcery no-metrics
         elif query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚜ Legendary Af LegendBot ⚜**",
+                text=f"**⚜ SAB KA BAAP CBAUSERBOT ⚜**",
                 buttons=[
-                    [Button.url("♥️ Tutorial ♥", "https://youtu.be/CH_KO1wim2o")],
-                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/LEGEND-AI/LegendBot")],
+                    [Button.url("♥️ Tutorial ♥", "NOTHING")],
+                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/BHAGWANUSERBOT/CBABOT")],
                     [
                         Button.url(
                             "💞 Deploy 💞",
-                            "https://heroku.com/deploy?template=https://github.com/LEGEND-AI/LEGENDBOT",
+                            "heroku.com/deploy?template=https://github.com/BHAGWANUSERBOT/CBABOT",
                         )
                     ],
                 ],
@@ -459,15 +459,15 @@ async def inline_handler(event):  # sourcery no-metrics
         elif string == "help":
             oso = gvarstatus("HELP_IMG")
             if oso is None:
-                help_pic = "https://telegra.ph/file/144d8ea74fef8ca12253c.jpg"
+                help_pic = "https://telegra.ph/file/7a43d71e592d9477a79a2.jpg"
             else:
                 lol = [x for x in oso.split()]
                 help_pic = random.choice(lol)
             _result = main_menu()
             if oso == "OFF":
                 result = builder.article(
-                    title="© LegendBot Help",
-                    description="Help menu for LegendBot",
+                    title="© CBAUSER-Bot Help",
+                    description="Help menu for CbauserBot",
                     text=_result[0],
                     buttons=_result[1],
                     link_preview=False,
@@ -588,7 +588,7 @@ async def inline_handler(event):  # sourcery no-metrics
             ]
             PM_PIC = (
                 gvarstatus("PM_PIC")
-                or "https://telegra.ph/file/69fa26f4659e377dea80e.jpg"
+                or "https://telegra.ph/file/7a43d71e592d9477a79a2.jpg"
             )
             if PM_PIC:
                 legend = [x for x in PM_PIC.split()]
@@ -600,20 +600,20 @@ async def inline_handler(event):  # sourcery no-metrics
             if LEGEND_IMG and LEGEND_IMG.endswith((".jpg", ".jpeg", ".png")):
                 result = builder.photo(
                     LEGEND_IMG,
-                    # title="Alive Legend",
+                    # title="Alive CBA-BOT",
                     text=query,
                     buttons=buttons,
                 )
             elif LEGEND_IMG:
                 result = builder.document(
                     LEGEND_IMG,
-                    title="Alive Legend",
+                    title="Alive CBA-BOT",
                     text=query,
                     buttons=buttons,
                 )
             else:
                 result = builder.article(
-                    title="Alive Legend",
+                    title="Alive CBA",
                     text=query,
                     buttons=buttons,
                 )
@@ -621,28 +621,28 @@ async def inline_handler(event):  # sourcery no-metrics
         else:
             buttons = [
                 (
-                    Button.url("Source code", "https://github.com/LEGEND-AI/LEGENDBOT"),
+                    Button.url("Source code", "https://github.com/BHAGWANUSERBOT/CBABOT"),
                     Button.url(
                         "Deploy",
-                        "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLEGEND-AI%2FLEGENDBOT&template=https%3A%2F%2Fgithub.com%2FLEGEND-AI%2FLEGENDBOT",
+                        "heroku.com/deploy?template=https://github.com/BHAGWANUSERBOT/CBABOT",
                     ),
                 )
             ]
-            ALV_PIC = "https://telegra.ph/file/8d79a264916a247fe28d2.jpg"
+            ALV_PIC = "https://telegra.ph/file/7a43d71e592d9477a79a2.jpg"
             markup = event.client.build_reply_markup(buttons)
             photo = types.InputWebDocument(
                 url=ALV_PIC, size=0, mime_type="image/jpeg", attributes=[]
             )
             text, msg_entities = await event.client._parse_message_text(
-                f"⚜ **Lêɠêɳ̃dẞø†** ⚜\n------------\n🔰 Owner ~ {mention}\n\n👨‍💻 Support ~ {Legend_grp}",
+                f"⚜ **CBA-USERBOT** ⚜\n------------\n🔰 Owner ~ {mention}\n\n👨‍💻 Support ~ {Legend_grp}",
                 "md",
             )
             result = types.InputBotInlineResult(
                 id=str(uuid4()),
                 type="photo",
-                title=f"Lêɠêɳ̃dẞø†",
-                description=f"Lêɠêɳ̃dẞø†\nhttps://t.me/LegendBot_OP",
-                url="https://github.com/LEGEND-AI/LEGENDBOT",
+                title=f"CBA-USERBOT†",
+                description=f"CBA-USERBOT†\nhttps://t.me/cba_userbot",
+                url="https://github.com/BHAGWANUSERBOT/CBABOT",
                 thumb=photo,
                 content=photo,
                 send_message=types.InputBotInlineMessageMediaAuto(
