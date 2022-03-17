@@ -83,4 +83,4 @@ async def legendalive(StartTime):
         f"{AppHours}h {AppMinutes}m/{hours}h {minutes}m"
     except Exception:
         pass
-    return f"꧁⚜ LegendBot Stats ⚜꧂\n\n༄ Database : {check_sgnirts}\n༄ Sudo : {sudo}\n༄ Uptime : {uptime}"
+    return f"꧁⚜ ƈɮǟ Stats ⚜꧂\n\n༄ Database : {check_sgnirts}\n༄ Sudo : {sudo}\n༄ Uptime : {uptime}"
