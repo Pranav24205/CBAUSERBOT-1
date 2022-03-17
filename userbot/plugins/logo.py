@@ -1,6 +1,6 @@
 """
-Created by @Legend_K_Boy
-#LegendUserBot
+Created by @CBA_USERBOT
+#CBAUSERBOT
 """
 
 import asyncio
