@@ -105,20 +105,20 @@ async def bot_start(event):
                 my_mention=my_mention,
             )
         else:
-            start_msg = f"Hey! 👤{mention},\nI am {my_mention}'s assistant bot.\nYou can contact to my master from here.\n\nPowered by [LegendBot](https://t.me/LegendBot_OP)"
+            start_msg = f"Hey! 👤{mention},\nI am {my_mention}'s assistant bot.\nYou can contact to my master from here.\n\nPowered by [CbaBot](https://t.me/cba_userbot)"
             buttons = [
                 (
                     Button.inline("🔰Rules🔰 ", data="rules"),
                     Button.inline(" Deploy 🚀", data="depy"),
                 ),
-                (Button.url(" 🔱Support🔱 ", "https://t.me/LegendBot_OP"),),
+                (Button.url(" 🔱Support🔱 ", "https://t.me/Cba_userbot"),),
             ]
     else:
         start_msg = "Hey Master!\nHow can i help you ?"
         buttons = [
             (
-                Button.url(" Support ", "https://t.me/LegendBot_OP"),
-                Button.url(" Updates ", "https://t.me/LegendBot_AI"),
+                Button.url(" Support ", "https://t.me/cba_support"),
+                Button.url(" Updates ", "https://t.me/cba_userbot"),
             ),
             (
                 Button.inline(" Users ", data="users"),
@@ -199,7 +199,7 @@ async def help(event):
                 ],
                 [
                     Button.url(
-                        "Github Repo ❓", "https://github.com/LEGEND-AI/LEGENDBOT"
+                        "Github Repo ❓", "https://github.com/BHAGWANUSERBOT/CBABOT"
                     ),
                 ],
             ],
