@@ -16,7 +16,7 @@ __copyright__ = f"CBA_Bot Copyright (C) 2021 - 2022  { __author__}"
 
 legend.version = __version__
 legend.tgbot.version = __version__
-LOGS = logging.getLogger("LegendUserBot")
+LOGS = logging.getLogger("CbaUserBot")
 bot = legend
 
 
