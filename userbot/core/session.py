@@ -13,7 +13,7 @@ loop = None
 if Config.LEGEND_STRING:
     session = StringSession(str(Config.LEGEND_STRING))
 else:
-    session = "LegendUserBot"
+    session = "CBAUserBot"
 
 try:
     legend = LegendClient(
@@ -27,7 +27,7 @@ try:
         connection_retries=None,
     )
 except Exception as e:
-    print(f"LEGEND_STRING - {e}")
+    print(f"CBA_STRING - {e}")
     sys.exit()
 
 legend.tgbot = tgbot = LegendClient(
