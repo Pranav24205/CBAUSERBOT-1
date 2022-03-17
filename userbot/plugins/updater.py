@@ -256,7 +256,7 @@ async def upstream(event):
         await print_changelogs(event, ac_br, changelog)
         await event.delete()
         return await event.respond(
-            f"do `{cmdhd}update deploy` to update the LegendUserBot"
+            f"do `{cmdhd}update deploy` to update the CbaUserBot"
         )
 
     if force_update:
@@ -273,8 +273,8 @@ async def upstream(event):
     pattern="update deploy$",
 )
 async def upstream(event):
-    event = await eor(event, "`Pulling the LEGENDBOT repo wait a sec ....`")
-    off_repo = "https://github.com/LEGEND-AI/LEGENDBOT"
+    event = await eor(event, "`Pulling the CBA USERBOT repo wait a sec ....`")
+    off_repo = "https://github.com/BHAGWANUSERBOT/CBABOT"
     os.chdir("/app")
     try:
         txt = (
@@ -332,4 +332,4 @@ async def variable(var):
         )
     heroku_var = app.config()
     await eor(var, "`Changing PRO to MULTI wait for 2-3 minutes.`")
-    heroku_var["UPSTREAM_REPO"] = "https://github.com/ITS-LEGENDBOT/LEGENDUSERBOT"
+    heroku_var["UPSTREAM_REPO"] = "https://github.com/BHAGWANUSERBOT/CBAUSERBOT"
