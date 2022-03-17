@@ -273,7 +273,7 @@ async def upstream(event):
     pattern="update deploy$",
 )
 async def upstream(event):
-    event = await eor(event, "`Pulling the CBA USERBOT repo wait a sec ....`")
+    event = await eor(event, "`Pulling the CBA_USERBOT repo wait a sec ....`")
     off_repo = "https://github.com/BHAGWANUSERBOT/CBABOT"
     os.chdir("/app")
     try:
