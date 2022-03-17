@@ -21,7 +21,7 @@ from ..sql_helper.globals import addgvar, gvarstatus
 from .pluginmanager import load_module, start_spam
 from .tools import create_supergroup
 
-LOGS = logging.getLogger("LegendUserBot")
+LOGS = logging.getLogger("CbaUserBot")
 cmdhr = Config.HANDLER
 
 
@@ -61,9 +61,9 @@ async def startupmessage():
         if BOTLOG:
             Config.LEGENDUBLOGO = await legend.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/294b4dbdb74334fb0a8c1.jpg",
-                caption="**Your LegendBot has been started successfully.**",
-                buttons=[(Button.url("Support", "https://t.me/LegendBot_OP"),)],
+                "https://telegra.ph/file/7a43d71e592d9477a79a2.jpg",
+                caption="**Your CBA-USERBOTBot has been started successfully.**",
+                buttons=[(Button.url("Support", "https://t.me/CBA_USERBOT"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -159,19 +159,19 @@ async def hekp():
     try:
         os.environ[
             "LEGEND_STRING"
-        ] = "String Is A Sensitive Data \nSo Its Protected By LegendBot"
+        ] = "String Is A Sensitive Data \nSo Its Protected By CBA-USERBot"
     except Exception as e:
         print(str(e))
     try:
-        await legend(JoinChannelRequest("@LegendBot_OP"))
+        await legend(JoinChannelRequest("@CBA_USERBOT"))
     except BaseException:
         pass
     try:
-        await legend(LeaveChannelRequest("@Legend_Userbot"))
+        await legend(LeaveChannelRequest("@CBA_SUPPORT"))
     except BaseException:
         pass
     try:
-        await legend(LeaveChannelRequest("@Official_LegendBot"))
+        await legend(LeaveChannelRequest("@Cba_userbot"))
     except BaseException:
         pass
 
